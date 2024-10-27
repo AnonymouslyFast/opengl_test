@@ -5,6 +5,7 @@
 // Prototypes
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
+void registerShaders(unsigned int shaderProgram);
 
 // (TEMP) vertex shader src
 const char *vertexShaderSource = "#version 330 core\n"
@@ -38,7 +39,7 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
     // Creating the window
-    GLFWwindow* window = glfwCreateWindow(600, 800, "MLDC", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(640, 600, "MLDC", NULL, NULL);
       // Checks if something went wrong creating the window and terminates glfw
     if (window == NULL) {
         std::cout << "Failed to open GLFW window." << std::endl;
@@ -54,10 +55,94 @@ int main() {
         return -1;
     }
 
-    glViewport(0, 0, 600, 800); // setting the viewport for lower left corner
+    glViewport(0, 0, 640, 600); // setting the viewport for lower left corner
 
+    // Setting the resize function to the resize event (so it calls the function when triggered)
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+    // Shader Shit
+    unsigned int shaderProgram = glCreateProgram(); // creates a unique shader id and assigns it
+    registerShaders(shaderProgram);
+    glUseProgram(shaderProgram);
+
+    // Creating a rectangle
+        // vertices in a 3d space so leave z 0.0 so it can look 2d
+    float vertices[] = {
+        0.5f,  0.5f, 0.0f,  // top right
+        0.5f, -0.5f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f,  // bottom left
+        -0.5f,  0.5f, 0.0f   // top left
+    };
+
+
+    unsigned int indices[] = {
+        0, 1, 3,   // first triangle
+        1, 2, 3    // second triangle
+    };
+
+
+    unsigned int VBO, VAO, EBO; // VBO = vertex buffer object, VAO = Vertex Array Object, EBO = Element Buffer Object
+
+        // Generating unique buffer object ids for VBO, VAO and EBO
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
+        // Binding VBO, EBO and VAO to their respective buffers
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+
+        // copies vertices and indices into the buffer's memory
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);  // can safely unbind
+
+    // While loop to keep the window up
+    while (!glfwWindowShouldClose(window)) {
+
+        // Processing inputs ya know
+        processInput(window);
+
+        // Render shit go here
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+            // Rendering Rectangle
+        glUseProgram(shaderProgram);
+        glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+
+        // other non-important stuff to comment
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    glfwTerminate(); // Cleaning the trash
+    return 0;
+}
+
+// When user resizes window
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
+    glViewport(0, 0, width, height); // resizing the viewport for the new window size to the lower left corner
+}
+
+// Put ya inputs in here ya dork
+void processInput(GLFWwindow* window) {
+
+    // when user presses ESC the window will close
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+        glfwSetWindowShouldClose(window, GLFW_TRUE);
+    }
+
+}
+
+void registerShaders(unsigned int shaderProgram) {
     // Creating vertex shader
     unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER); // creates a shader unique id
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL); // attaches the shader src to vertex shader
@@ -83,12 +168,9 @@ int main() {
         std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
 
-    // Creating shader program
-    unsigned int shaderProgram = glCreateProgram(); // creates a unique id for the program and assigns it
-        // Attaching vertex and fragment shaders to the shader program
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
-        // Links the program
+    // Links the program
     glLinkProgram(shaderProgram);
 
     // Checking if failed
@@ -98,73 +180,8 @@ int main() {
         std::cout << "ERROR::SHADER::PROGRAM::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
 
-    glUseProgram(shaderProgram);
-
     // Deletes the shaders since there's no longer a use for them
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
-
-
-    // vertices in a 3d space so leave z 0.0 so it can look 2d
-    float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-         0.5f, -0.5f, 0.0f,
-         0.0f,  0.5f, 0.0f
-    };
-
-    unsigned int VBO; // VBO = vertex buffer object
-    glGenBuffers(1, &VBO); // generates unique buffer object id to VBO var
-
-    // creating a VAO = Vertex Array Object
-    unsigned int VAO;
-    glGenVertexArrays(1, &VAO);
-
-    glBindVertexArray(VAO);
-
-    glBindBuffer(GL_ARRAY_BUFFER, VBO); // binding the array buffer to VBO var
-
-    // copies vertices into the buffer's memory
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-
-    // While loop to keep the window up
-    while (!glfwWindowShouldClose(window)) {
-
-        // Processing inputs ya know
-        processInput(window);
-
-        // Render shit go here
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        // Triangle
-        glUseProgram(shaderProgram);
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
-
-
-        // other non-important stuff to comment
-        glfwSwapBuffers(window);
-        glfwPollEvents();
-    }
-
-    glfwTerminate(); // Cleaning the trash
-    return 0;
-}
-
-// When user resizes window
-void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
-    glViewport(0, 0, width, height); // resizing the viewport for the new window size to the lower left corner
-}
-
-// Put ya inputs in here ya dork
-void processInput(GLFWwindow* window) {
-
-    // when user presses ESC the window will close
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, GLFW_TRUE);
-    }
 
 }
