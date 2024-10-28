@@ -133,6 +133,13 @@ build src/CMakeFiles/opengl_test.dir/__/vendor/glad/glad.c.obj: C_COMPILER__open
   OBJECT_DIR = src\CMakeFiles\opengl_test.dir
   OBJECT_FILE_DIR = src\CMakeFiles\opengl_test.dir\__\vendor\glad
 
+build src/CMakeFiles/opengl_test.dir/Shader.cpp.obj: CXX_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/src/Shader.cpp || cmake_object_order_depends_target_opengl_test
+  DEP_FILE = src\CMakeFiles\opengl_test.dir\Shader.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include"
+  OBJECT_DIR = src\CMakeFiles\opengl_test.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\opengl_test.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target opengl_test
@@ -141,7 +148,7 @@ build src/CMakeFiles/opengl_test.dir/__/vendor/glad/glad.c.obj: C_COMPILER__open
 #############################################
 # Link the executable src\opengl_test.exe
 
-build src/opengl_test.exe: CXX_EXECUTABLE_LINKER__opengl_test_Debug src/CMakeFiles/opengl_test.dir/Application.cpp.obj src/CMakeFiles/opengl_test.dir/__/vendor/glad/glad.c.obj | vendor/glfw/src/libglfw3.a || vendor/glfw/src/libglfw3.a
+build src/opengl_test.exe: CXX_EXECUTABLE_LINKER__opengl_test_Debug src/CMakeFiles/opengl_test.dir/Application.cpp.obj src/CMakeFiles/opengl_test.dir/__/vendor/glad/glad.c.obj src/CMakeFiles/opengl_test.dir/Shader.cpp.obj | vendor/glfw/src/libglfw3.a || vendor/glfw/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = vendor/glfw/src/libglfw3.a  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\opengl_test.dir
