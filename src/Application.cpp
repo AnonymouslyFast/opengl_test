@@ -36,20 +36,22 @@ int main() {
       // opens the window
     glfwMakeContextCurrent(window);
 
+
     // Checks if glad has a problem
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
 
-
     glViewport(0, 0, 640, 600); // setting the viewport for lower left corner
 
     // Setting the resize function to the resize event (so it calls the function when triggered)
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    // Shader Shit
+
+    // Creating Shaders
     Shader shader("../assets/shaders/main_vertex.glsl", "../assets/shaders/main_fragment.glsl");
+
 
     // Creating a rectangle
 
@@ -91,6 +93,8 @@ int main() {
     glEnableVertexAttribArray(1);
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);  // can safely unbind
+
+
 
     // While loop to keep the window up
     while (!glfwWindowShouldClose(window)) {
