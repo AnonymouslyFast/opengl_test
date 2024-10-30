@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/caleb/OneDrive/Desktop/c++/opengl test/src
+# Install script for directory: C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

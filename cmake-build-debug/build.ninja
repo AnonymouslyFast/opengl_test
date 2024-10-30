@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -56,7 +56,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\caleb\OneDrive\Desktop\c++\opengl test" -B"C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\caleb\OneDrive\Desktop\c++\opengl_test -BC:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -74,7 +74,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -86,7 +86,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -98,7 +98,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/caleb/OneDrive/Desktop/c++/opengl test/CMakeLists.txt
+# C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -119,26 +119,32 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_opengl_test: phony || cmake_object_order_depends_target_glfw
 
-build src/CMakeFiles/opengl_test.dir/Application.cpp.obj: CXX_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/src/Application.cpp || cmake_object_order_depends_target_opengl_test
+build src/CMakeFiles/opengl_test.dir/Application.cpp.obj: CXX_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/src/Application.cpp || cmake_object_order_depends_target_opengl_test
   DEP_FILE = src\CMakeFiles\opengl_test.dir\Application.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include
   OBJECT_DIR = src\CMakeFiles\opengl_test.dir
   OBJECT_FILE_DIR = src\CMakeFiles\opengl_test.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\opengl_test.dir\
+  TARGET_PDB = src\opengl_test.pdb
 
-build src/CMakeFiles/opengl_test.dir/__/vendor/glad/glad.c.obj: C_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glad/glad.c || cmake_object_order_depends_target_opengl_test
+build src/CMakeFiles/opengl_test.dir/__/vendor/glad/glad.c.obj: C_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glad/glad.c || cmake_object_order_depends_target_opengl_test
   DEP_FILE = src\CMakeFiles\opengl_test.dir\__\vendor\glad\glad.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include
   OBJECT_DIR = src\CMakeFiles\opengl_test.dir
   OBJECT_FILE_DIR = src\CMakeFiles\opengl_test.dir\__\vendor\glad
+  TARGET_COMPILE_PDB = src\CMakeFiles\opengl_test.dir\
+  TARGET_PDB = src\opengl_test.pdb
 
-build src/CMakeFiles/opengl_test.dir/Shader.cpp.obj: CXX_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/src/Shader.cpp || cmake_object_order_depends_target_opengl_test
+build src/CMakeFiles/opengl_test.dir/Shader.cpp.obj: CXX_COMPILER__opengl_test_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/src/Shader.cpp || cmake_object_order_depends_target_opengl_test
   DEP_FILE = src\CMakeFiles\opengl_test.dir\Shader.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include
   OBJECT_DIR = src\CMakeFiles\opengl_test.dir
   OBJECT_FILE_DIR = src\CMakeFiles\opengl_test.dir
+  TARGET_COMPILE_PDB = src\CMakeFiles\opengl_test.dir\
+  TARGET_PDB = src\opengl_test.pdb
 
 
 # =============================================================================
@@ -154,16 +160,17 @@ build src/opengl_test.exe: CXX_EXECUTABLE_LINKER__opengl_test_Debug src/CMakeFil
   OBJECT_DIR = src\CMakeFiles\opengl_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\CMakeFiles\opengl_test.dir\
   TARGET_FILE = src\opengl_test.exe
   TARGET_IMPLIB = src\libopengl_test.dll.a
-  TARGET_PDB = opengl_test.exe.dbg
+  TARGET_PDB = src\opengl_test.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -174,7 +181,7 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\caleb\OneDrive\Desktop\c++\opengl test" -B"C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\caleb\OneDrive\Desktop\c++\opengl_test -BC:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -192,7 +199,7 @@ build src/list_install_components: phony
 # Utility command for install
 
 build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -204,7 +211,7 @@ build src/install: phony src/CMakeFiles/install.util
 # Utility command for install/local
 
 build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -216,7 +223,7 @@ build src/install/local: phony src/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -225,7 +232,7 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/caleb/OneDrive/Desktop/c++/opengl test/CMakeLists.txt
+# C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/CMakeLists.txt
 # =============================================================================
 
 
@@ -239,7 +246,7 @@ build vendor/glfw/uninstall: phony vendor/glfw/CMakeFiles/uninstall
 # Utility command for edit_cache
 
 build vendor/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -250,7 +257,7 @@ build vendor/glfw/edit_cache: phony vendor/glfw/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build vendor/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\caleb\OneDrive\Desktop\c++\opengl test" -B"C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\caleb\OneDrive\Desktop\c++\opengl_test -BC:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -268,7 +275,7 @@ build vendor/glfw/list_install_components: phony
 # Utility command for install
 
 build vendor/glfw/CMakeFiles/install.util: CUSTOM_COMMAND vendor/glfw/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -280,7 +287,7 @@ build vendor/glfw/install: phony vendor/glfw/CMakeFiles/install.util
 # Utility command for install/local
 
 build vendor/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND vendor/glfw/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -292,7 +299,7 @@ build vendor/glfw/install/local: phony vendor/glfw/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build vendor/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND vendor/glfw/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -304,11 +311,11 @@ build vendor/glfw/install/strip: phony vendor/glfw/CMakeFiles/install/strip.util
 # Custom command for vendor\glfw\CMakeFiles\uninstall
 
 build vendor/glfw/CMakeFiles/uninstall | ${cmake_ninja_workdir}vendor/glfw/CMakeFiles/uninstall: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P "C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/cmake_uninstall.cmake""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/CMakeLists.txt
+# C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -320,173 +327,215 @@ build vendor/glfw/CMakeFiles/uninstall | ${cmake_ninja_workdir}vendor/glfw/CMake
 
 build cmake_object_order_depends_target_glfw: phony || .
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/context.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/init.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\init.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/input.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\input.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/platform.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\platform.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/window.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\window.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
-build vendor/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
+build vendor/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
   DEP_FILE = vendor\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj.d
   FLAGS = -g -std=c99 -fdiagnostics-color=always -Wall
-  INCLUDES = -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/include" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/src" -I"C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src"
+  INCLUDES = -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/include -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src -IC:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
 
 # =============================================================================
@@ -501,8 +550,9 @@ build vendor/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug vendor/glf
   OBJECT_DIR = vendor\glfw\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = vendor\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_FILE = vendor\glfw\src\libglfw3.a
-  TARGET_PDB = glfw3.a.dbg
+  TARGET_PDB = vendor\glfw\src\libglfw3.pdb
 
 
 #############################################
@@ -515,7 +565,7 @@ build vendor/glfw/src/update_mappings: phony vendor/glfw/src/CMakeFiles/update_m
 # Utility command for edit_cache
 
 build vendor/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -526,7 +576,7 @@ build vendor/glfw/src/edit_cache: phony vendor/glfw/src/CMakeFiles/edit_cache.ut
 # Utility command for rebuild_cache
 
 build vendor/glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\caleb\OneDrive\Desktop\c++\opengl test" -B"C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\caleb\OneDrive\Desktop\c++\opengl_test -BC:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -544,7 +594,7 @@ build vendor/glfw/src/list_install_components: phony
 # Utility command for install
 
 build vendor/glfw/src/CMakeFiles/install.util: CUSTOM_COMMAND vendor/glfw/src/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -556,7 +606,7 @@ build vendor/glfw/src/install: phony vendor/glfw/src/CMakeFiles/install.util
 # Utility command for install/local
 
 build vendor/glfw/src/CMakeFiles/install/local.util: CUSTOM_COMMAND vendor/glfw/src/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -568,7 +618,7 @@ build vendor/glfw/src/install/local: phony vendor/glfw/src/CMakeFiles/install/lo
 # Utility command for install/strip
 
 build vendor/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND vendor/glfw/src/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -580,12 +630,12 @@ build vendor/glfw/src/install/strip: phony vendor/glfw/src/CMakeFiles/install/st
 # Custom command for vendor\glfw\src\CMakeFiles\update_mappings
 
 build vendor/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}vendor/glfw/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\vendor\glfw\src" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P "C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\vendor\glfw\src && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h"
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/caleb/OneDrive/Desktop/c++/opengl test/vendor/glfw/CMakeLists.txt
+# C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMakeLists.txt
 # =============================================================================
 
 
@@ -593,7 +643,7 @@ build vendor/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}vendor/
 # Utility command for edit_cache
 
 build vendor/glfw/docs/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\docs" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\docs && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -604,7 +654,7 @@ build vendor/glfw/docs/edit_cache: phony vendor/glfw/docs/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build vendor/glfw/docs/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\docs" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\caleb\OneDrive\Desktop\c++\opengl test" -B"C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\docs && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\caleb\OneDrive\Desktop\c++\opengl_test -BC:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -622,7 +672,7 @@ build vendor/glfw/docs/list_install_components: phony
 # Utility command for install
 
 build vendor/glfw/docs/CMakeFiles/install.util: CUSTOM_COMMAND vendor/glfw/docs/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\docs" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\docs && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -634,7 +684,7 @@ build vendor/glfw/docs/install: phony vendor/glfw/docs/CMakeFiles/install.util
 # Utility command for install/local
 
 build vendor/glfw/docs/CMakeFiles/install/local.util: CUSTOM_COMMAND vendor/glfw/docs/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\docs" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\docs && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -646,7 +696,7 @@ build vendor/glfw/docs/install/local: phony vendor/glfw/docs/CMakeFiles/install/
 # Utility command for install/strip
 
 build vendor/glfw/docs/CMakeFiles/install/strip.util: CUSTOM_COMMAND vendor/glfw/docs/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug\vendor\glfw\docs" && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug\vendor\glfw\docs && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -674,35 +724,35 @@ build update_mappings: phony vendor/glfw/src/update_mappings
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug
+# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug
 
 build all: phony src/all vendor/glfw/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/src
+# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/src
 
 build src/all: phony src/opengl_test.exe
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw
+# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw
 
 build vendor/glfw/all: phony vendor/glfw/src/all vendor/glfw/docs/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/docs
+# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/docs
 
 build vendor/glfw/docs/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl test/cmake-build-debug/vendor/glfw/src
+# Folder: C:/Users/caleb/OneDrive/Desktop/c++/opengl_test/cmake-build-debug/vendor/glfw/src
 
 build vendor/glfw/src/all: phony vendor/glfw/src/libglfw3.a
 
@@ -713,14 +763,14 @@ build vendor/glfw/src/all: phony vendor/glfw/src/libglfw3.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindDoxygen.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/src/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMake/glfw3.pc.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/docs/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindDoxygen.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/src/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/glfw3.pc.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/docs/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindDoxygen.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/src/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMake/glfw3.pc.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/docs/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl$ test/vendor/glfw/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindDoxygen.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/src/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/glfw3.pc.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/docs/CMakeLists.txt C$:/Users/caleb/OneDrive/Desktop/c++/opengl_test/vendor/glfw/src/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

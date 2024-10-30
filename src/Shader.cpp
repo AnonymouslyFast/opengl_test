@@ -11,32 +11,47 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 {
 
 	// Part 1: Get code from vertex and fragment files and put them in const char form.
+	std::string vertexFileContents;
+	std::string fragmentFileContents;
 	const char* vertexCode;
 	const char* fragmentCode;
 	try {
 		// vertex shit
 		std::ifstream vertex(vertexPath);
-		std::stringstream vertexStream;
-		vertexStream << vertex.rdbuf();
+			// Looping through lines and adding it to file content var
+		for (std::string line; std::getline(vertex, line);) {
+			vertexFileContents += line + '\n';
+		}
 		vertex.close();
-		vertexCode = vertexStream.str().c_str();
 
 		// fragment shit
-		std::ifstream fragment(vertexPath);
-		std::stringstream fragmentStream;
-		fragmentStream << fragment.rdbuf();
+		std::ifstream fragment(fragmentPath);
+			// Looping through lines and adding it to file content var
+		for (std::string line; std::getline(fragment, line);) {
+			fragmentFileContents += line + '\n';
+		}
 		fragment.close();
-		fragmentCode = fragmentStream.str().c_str();
-
 	} catch (std::ifstream::failure& e) {
 		std::cout << "ERROR::SHADER::FILE_ERROR" << e.what() << std::endl;
 	}
+
+	// temp fix for file shit <3
+	vertexFileContents.erase(0,3);
+	fragmentFileContents.erase(0,3);
+
+	// Converting the string into a char*
+	vertexCode = vertexFileContents.c_str();
+	fragmentCode = fragmentFileContents.c_str();
+
 	// END OF PART 1
 
 	// Part 2: Create shader program from the extracted vertex and fragment shaders
 	unsigned int vertex, fragment;
 	int success;
 	char infoLog[512];
+
+	std::cout << vertexCode << std::endl;
+
 
 		// Turning vertex into a shader with unique id
 	vertex = glCreateShader(GL_VERTEX_SHADER);

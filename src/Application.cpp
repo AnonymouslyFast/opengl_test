@@ -49,8 +49,8 @@ int main() {
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
 
-    // Creating Shaders
-    Shader shader("../assets/shaders/main_vertex.glsl", "../assets/shaders/main_fragment.glsl");
+    // Creating Shaders (Yes ik I am using full path cuz I didn't wanna spend YEARS on this shader shit)
+    Shader shader(R"(C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\assets\shaders\main_vertex.glsl)", R"(C:\Users\caleb\OneDrive\Desktop\c++\opengl_test\assets\shaders\main_fragment.glsl)");
 
 
     // Creating a rectangle

@@ -71,7 +71,7 @@ rule C_STATIC_LIBRARY_LINKER__glfw_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\caleb\OneDrive\Desktop\c++\opengl test" -B"C:\Users\caleb\OneDrive\Desktop\c++\opengl test\cmake-build-debug"
+  command = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\caleb\OneDrive\Desktop\c++\opengl_test -BC:\Users\caleb\OneDrive\Desktop\c++\opengl_test\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -80,7 +80,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\ninja\win\x64\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\ninja\win\x64\ninja.exe" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -88,6 +88,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\ninja\win\x64\ninja.exe -t targets
+  command = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\ninja\win\x64\ninja.exe" -t targets
   description = All primary targets available:
 
