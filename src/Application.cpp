@@ -4,6 +4,8 @@
 #include "Shader.h"
 
 #include <iostream>
+#include <bits/stl_algo.h>
+
 #include "../Dependencies/include/stb_image/stb_image.h"
 #include "../Dependencies/include/glm/glm.hpp"
 #include "../Dependencies/include/glm/gtc/matrix_transform.hpp"
@@ -14,6 +16,32 @@
 // Prototypes
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+
+// Camera Positions
+glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
+
+// Time shit
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+
+// Direction shit
+float yaw = -90.0f;
+float pitch = 0.0f;
+
+// Default settings
+int windowWidth = 1280;
+int windowHeight = 720;
+
+// Mouse Default Settings
+    // puts the cursor in the middle of the screen
+float lastX = windowWidth / 2.0f;
+float lastY = windowHeight / 2.0f;
+const float mouseSense = 0.1f;
+
+
 
 // Magic happens here
 int main() {
@@ -31,7 +59,7 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
     // Creating the window
-    GLFWwindow* window = glfwCreateWindow(1250, 750, "OpenGL Test", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(windowWidth, windowHeight, "OpenGL Test", NULL, NULL);
       // Checks if something went wrong creating the window and terminates glfw
     if (window == NULL) {
         std::cout << "Failed to open GLFW window." << std::endl;
@@ -48,10 +76,14 @@ int main() {
         return -1;
     }
 
-    glViewport(0, 0, 1250, 750); // setting the viewport for lower left corner
+    glViewport(0, 0, windowWidth, windowHeight); // setting the viewport for lower left corner
 
     // Setting the resize function to the resize event (so it calls the function when triggered)
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    // Mouse
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); // Disabling mouse
+    glfwSetCursorPosCallback(window, mouse_callback); // Binding the mouse_callback function to the event
 
 
     // Creating Shaders (Yes ik I am using full path cuz I didn't wanna spend YEARS on this shader shit)
@@ -179,6 +211,11 @@ int main() {
     // While loop to keep the window up
     while (!glfwWindowShouldClose(window)) {
 
+        // Calc DeltaTime
+        float currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
         // Processing inputs ya know
         processInput(window);
 
@@ -192,32 +229,32 @@ int main() {
 
         float timeValue = glfwGetTime();
 
-        // Creating 3d object
-            // Creating a model matrix
+        // Creating a model matrix
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-            // Creating a view matrix
-        glm::mat4 view = glm::mat4(1.0f);
-                // note that we're translating the scene in the reverse direction of where we want to move
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-            // Creating a projection matrix
+
+        // Creating a view matrix
+        glm::mat4 view;
+        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+
+
+        // Creating a projection matrix
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
 
-            // Transformations
 
-            // Setting the matrices in the shader
-                // Model Matrix
+        // Setting the matrices in the shader
+            // Model Matrix
         int modelLoc = glGetUniformLocation(shader.ID, "model");
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-                // View Matrix
+            // View Matrix
         int viewLoc = glGetUniformLocation(shader.ID, "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-                // Projection Matrix
+            // Projection Matrix
         int projectionLoc = glGetUniformLocation(shader.ID, "projection");
         glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
 
-            // Rendering Cube
+            // Rendering Cubes
         glBindVertexArray(VAO);
         for(unsigned int i = 0; i < 10; i++)
         {
@@ -253,5 +290,54 @@ void processInput(GLFWwindow* window) {
         glfwSetWindowShouldClose(window, GLFW_TRUE);
     }
 
+    // Camera Walking
+    const float cameraSpeed = 2.5f * deltaTime;
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+        cameraPos += cameraSpeed * cameraFront;
+    }
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+        cameraPos -= cameraSpeed * cameraFront;
+    }
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    }
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    }
 }
 
+// Mouse Movements
+void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+
+    float xOffset = xpos - lastX;
+    float yOffset = lastY - ypos;
+    lastX = xpos;
+    lastY = ypos;
+
+    xOffset *= mouseSense;
+    yOffset *= mouseSense;
+
+    yaw += xOffset;
+    pitch += yOffset;
+
+    if (pitch > 89.0f) {
+        pitch = 89.0f;
+    } else if (pitch < -89.0f) {
+        pitch = -89.0f;
+    }
+
+    bool firstMouse = true;
+    if (firstMouse) {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    // Calc direction
+    glm::vec3 direction = glm::vec3(1.0f, 1.0f, 1.0f);
+    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    direction.y = sin(glm::radians(pitch));
+    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(direction);
+
+}
